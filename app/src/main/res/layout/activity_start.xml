@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+            android:id="@+id/tvSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Select Size"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+            android:id="@+id/rgGameSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="@+id/tvSize"
+            app:layout_constraintStart_toStartOf="@+id/tvSize"
+            app:layout_constraintTop_toBottomOf="@+id/tvSize">
+
+        <RadioButton
+                android:id="@+id/rb4x4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:clickable="true"
+                android:padding="10dp"
+                android:text="4x4" />
+
+        <RadioButton
+                android:id="@+id/rb6x6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:padding="10dp"
+                android:text="6x6" />
+    </RadioGroup>
+
+    <TextView
+            android:id="@+id/tvPlayAgainst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Play Against"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/rgGameSize"
+            app:layout_constraintStart_toStartOf="@+id/rgGameSize"
+            app:layout_constraintTop_toBottomOf="@+id/rgGameSize" />
+
+    <RadioGroup
+            android:id="@+id/rgPlayers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="@+id/tvPlayAgainst"
+            app:layout_constraintStart_toStartOf="@+id/tvPlayAgainst"
+            app:layout_constraintTop_toBottomOf="@+id/tvPlayAgainst">
+
+        <RadioButton
+                android:id="@+id/rbComputer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:clickable="true"
+                android:padding="10dp"
+                android:text="Computer" />
+
+        <RadioButton
+                android:id="@+id/rbHuman"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:padding="10dp"
+                android:text="Human" />
+
+    </RadioGroup>
+
+    <TextView
+            android:id="@+id/tvDifficulty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Select Difficulty"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/rgPlayers"
+            app:layout_constraintStart_toStartOf="@+id/rgPlayers"
+            app:layout_constraintTop_toBottomOf="@+id/rgPlayers" />
+
+    <RadioGroup
+            android:id="@+id/rgDifficulty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="@+id/tvDifficulty"
+            app:layout_constraintStart_toStartOf="@+id/tvDifficulty"
+            app:layout_constraintTop_toBottomOf="@+id/tvDifficulty">
+
+        <RadioButton
+                android:id="@+id/rbEasy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:clickable="true"
+                android:padding="10dp"
+                android:text="Easy" />
+
+        <RadioButton
+                android:id="@+id/rbMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:padding="10dp"
+                android:text="Medium" />
+
+        <RadioButton
+                android:id="@+id/rbHard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:padding="10dp"
+                android:text="Hard" />
+    </RadioGroup>
+
+    <Button
+            android:id="@+id/startButton"
+            android:layout_width="110dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="15dp"
+            android:text="Start Game"
+            app:layout_constraintEnd_toEndOf="@+id/rgDifficulty"
+            app:layout_constraintStart_toStartOf="@+id/rgDifficulty"
+            app:layout_constraintTop_toBottomOf="@+id/rgDifficulty" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
